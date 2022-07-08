@@ -68,7 +68,7 @@ async def play(c: Client, m: Message):
             return
         if not a.can_manage_voice_chats:
             await m.reply_text(
-                "أّلَصٌلَأّحٌيِّهِ مَفِّقِوِدِهِد:" + "\n\n» ❌ __إدارة دردشة الفيديو__"
+                "أّلَصٌلَأّحٌيِّهِ مَفِّقِوِد:" + "\n\n» ❌ __إدارة دردشة الفيديو__"
             )
             return
         if not a.can_delete_messages:
