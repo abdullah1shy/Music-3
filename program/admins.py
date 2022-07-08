@@ -107,7 +107,7 @@ async def stop(client, m: Message):
 
 
 @Client.on_message(
-    command(["مؤقت", f"مؤقت@{BOT_USERNAME}", "vpause"]) & other_filters
+    command(["ايقاف", f"مؤقت@{BOT_USERNAME}", "vpause"]) & other_filters
 )
 @authorized_users_only
 async def pause(client, m: Message):
@@ -116,7 +116,7 @@ async def pause(client, m: Message):
         try:
             await call_py.pause_stream(chat_id)
             await m.reply(
-                "⏸ **تم إيقاف المسار مؤقتًا..**\n\n• **لاستئناف التشغيل ، استخدم**\n» امر (استئناف)"
+                "⏸ **تم إيقاف المسار مؤقتًا..**\n\n• **لاستئناف التشغيل ، استخدم**\n» امر (بدء)"
             )
         except Exception as e:
             await m.reply(f"🚫 **error:**\n\n`{e}`")
@@ -125,7 +125,7 @@ async def pause(client, m: Message):
 
 
 @Client.on_message(
-    command(["استئناف", f"استئناف@{BOT_USERNAME}", "vresume"]) & other_filters
+    command(["بدء", f"بدء@{BOT_USERNAME}", "vresume"]) & other_filters
 )
 @authorized_users_only
 async def resume(client, m: Message):
@@ -134,7 +134,7 @@ async def resume(client, m: Message):
         try:
             await call_py.resume_stream(chat_id)
             await m.reply(
-                "▶️ **استئناف المسار.**\n\n• **لإيقاف البث مؤقتًا ، استخدم**\n» امر (مؤقت)"
+                "▶️ **بدء المسار.**\n\n• **لإيقاف البث مؤقتًا ، استخدم**\n» امر (ايقاف)"
             )
         except Exception as e:
             await m.reply(f"🚫 **error:**\n\n`{e}`")
