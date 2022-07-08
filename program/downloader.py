@@ -35,10 +35,10 @@ ydl_opts = {
 }
 
 
-@Client.on_message(command(["تحميل", f"song@{bn}"]) & ~filters.edited)
+@Client.on_message(command(["بحث", f"song@{bn}"]) & ~filters.edited)
 def song(_, message):
     query = " ".join(message.command[1:])
-    m = message.reply("🔎 finding song...")
+    m = message.reply("🔎 البحث عن الأغنية ...")
     ydl_ops = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
