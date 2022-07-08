@@ -74,7 +74,7 @@ async def start_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌐 كروب الدعم 🌐", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "🌐 القناة 🌐", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
                         "🌐 قناة البوت 🌐", url=f"https://t.me/{UPDATES_CHANNEL}"
@@ -82,7 +82,7 @@ async def start_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "⃟𝐬𝐨𝐮𝐫𝐜𝐞 𝐜𝐨𝐛𝐫𝐚⃟", url="https://t.me/VFF35"
+                        "⃟𝐬𝐨𝐮𝐫𝐜𝐞 𝐜𝐨𝐛𝐫𝐚⃟", url="https://t.me/KKKT6"
                     )
                 ],
             ]
@@ -102,9 +102,9 @@ async def alive(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("اوامر التشغيل", url=f"https://t.me/VFF35"),
+                InlineKeyboardButton("اوامر التشغيل", url=f"https://telegra.ph/%D8%A7%D9%87%D9%84%D8%A7-%D8%B9%D9%85%D8%B1%D9%8A-%D9%87%D8%A7%D9%8A-%D8%A7%D9%88%D8%A7%D9%85%D8%B1-%D8%A7%D9%84%D8%A8%D9%88%D8%AA-07-03"),
                 InlineKeyboardButton(
-                    "مطور السورس", url=f"https://t.me/QABNADLIB"
+                    "مطور السورس", url=f"https://t.me/j64jj"
                 ),
             ]
         ]
@@ -129,9 +129,9 @@ async def src(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("اوامر التشغيل", url=f"https://t.me/VFF35"),
+                InlineKeyboardButton("اوامر التشغيل", url=f"https://telegra.ph/%D8%A7%D9%87%D9%84%D8%A7-%D8%B9%D9%85%D8%B1%D9%8A-%D9%87%D8%A7%D9%8A-%D8%A7%D9%88%D8%A7%D9%85%D8%B1-%D8%A7%D9%84%D8%A8%D9%88%D8%AA-07-03"),
                 InlineKeyboardButton(
-                    "مطور السورس", url=f"https://t.me/QABNADLIB"
+                    "مطور السورس", url=f"https://t.me/j64jj"
                 ),
             ]
         ]
