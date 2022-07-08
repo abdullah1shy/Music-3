@@ -23,7 +23,7 @@ async def join_chat(c: Client, m: Message):
             (await user.get_me()).id,
             can_manage_voice_chats=True
         )
-        return await user.send_message(chat_id, "✅ ابشر بعزك تم دخولي")
+        return await user.send_message(chat_id, "هلووو اني اجيت 😂🥺🤍")
     except UserAlreadyParticipant:
         admin = await m.chat.get_member((await user.get_me()).id)
         if not admin.can_manage_voice_chats:
@@ -31,8 +31,8 @@ async def join_chat(c: Client, m: Message):
                 (await user.get_me()).id,
                 can_manage_voice_chats=True
             )
-            return await user.send_message(chat_id, "✅ موجود ياوجه الخيرِ")
-        return await user.send_message(chat_id, "✅ موجود ياطيب لاتلح عليا ")
+            return await user.send_message(chat_id, "✅ موجود عمري ")
+        return await user.send_message(chat_id, " موجود يقلبي شبيك ششارب ليوم 😂😬 ")
 
 
 @Client.on_message(command(["غادر",
@@ -54,7 +54,7 @@ async def leave_chat(_, m: Message):
         )
 
 
-@Client.on_message(command(["مغادرة كل المجموعات", f"leaveall@{BOT_USERNAME}"]))
+@Client.on_message(command(["مغادرة الكل", f"leaveall@{BOT_USERNAME}"]))
 @sudo_users_only
 async def leave_all(client, message):
     if message.from_user.id not in SUDO_USERS:
